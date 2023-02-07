@@ -1,0 +1,17 @@
+<h1> I love tacos and hotpot! </h1>
+<p> There are so many delish tacos and hotpot </p>
+
+<%
+    fillings = ["Carnitas", "Al paster","Steak","fish", "pork"]
+%>
+<p> Currently, there are <%= fillings.count%> kinds of tacos </p>
+<ul>
+    <!-- <li>Carnite</li> -->
+    <!--<li><%= fillings[0]%></li>
+    <li><%= fillings[1]%></li>
+    <li><%= fillings[2]%></li>-->
+    <% for taco in fillings %>
+        <li><%= taco%></li>
+
+    <%end%>
+</ul>
